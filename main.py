@@ -294,9 +294,23 @@ def main(page: ft.Page):
 
 
 if __name__ == "__main__":
-    # Para web, usar: flet run --web main.py
-    # Para desktop, usar: python main.py o flet run main.py
-    ft.app(target=main, assets_dir="assets")
+    import os
+
+    # Detectar si estamos en un entorno de servidor (EasyPanel/Heroku/etc)
+    port = os.environ.get("PORT")
+
+    if port:
+        # Modo web en servidor
+        ft.app(
+            target=main,
+            assets_dir="assets",
+            view=ft.AppView.WEB_BROWSER,
+            port=int(port),
+            host="0.0.0.0"
+        )
+    else:
+        # Modo desktop local
+        ft.app(target=main, assets_dir="assets")
     
     
 """
