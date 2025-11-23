@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python main.py:*)",
+      "Bash(python database/migrate_add_abonos.py:*)",
+      "Bash(flet run:*)",
+      "Bash(uv run:*)",
+      "Bash(if not exist \"c:\\Users\\zeek2\\OneDrive\\Escritorio\\base_flet\\assets\\temp_pdfs\" mkdir \"c:\\Users\\zeek2\\OneDrive\\Escritorio\\base_flet\\assets\\temp_pdfs\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
