@@ -5,7 +5,9 @@
       "Bash(python database/migrate_add_abonos.py:*)",
       "Bash(flet run:*)",
       "Bash(uv run:*)",
-      "Bash(if not exist \"c:\\Users\\zeek2\\OneDrive\\Escritorio\\base_flet\\assets\\temp_pdfs\" mkdir \"c:\\Users\\zeek2\\OneDrive\\Escritorio\\base_flet\\assets\\temp_pdfs\")"
+      "Bash(if not exist \"c:\\Users\\zeek2\\OneDrive\\Escritorio\\base_flet\\assets\\temp_pdfs\" mkdir \"c:\\Users\\zeek2\\OneDrive\\Escritorio\\base_flet\\assets\\temp_pdfs\")",
+      "Bash(del \"c:\\Users\\zeek2\\OneDrive\\Escritorio\\base_flet\\requirements.txt\")",
+      "Bash(uv lock:*)"
     ],
     "deny": [],
     "ask": []
